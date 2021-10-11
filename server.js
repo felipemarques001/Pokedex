@@ -3,12 +3,9 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 
-app.listen(3000, () =>{
-    console.log('Server running on port 3000')
-})
-
 app.use(cors())
 
+//THE REQUEST COMING FROM FETCH WILL BE PROCESSED HERE
 app.get('/pokemon/:id', async (req, res) =>{
     try {
         const {data} = await axios(`https://pokeapi.co/api/v2/pokemon/${req.params.id}`);
@@ -20,3 +17,7 @@ app.get('/pokemon/:id', async (req, res) =>{
 })
 
 
+//SERVER PORT
+app.listen(3000, () =>{
+    console.log('Server running on port 3000')
+})

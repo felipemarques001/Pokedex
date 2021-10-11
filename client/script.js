@@ -1,19 +1,18 @@
-
-async function buscarPokemon(){
+async function fetchPokemon(){
     for (let num = 1; num <= 150; num++) {
         try {
             const response = await fetch(`http://localhost:3000/pokemon/${num}`)
             let data = await response.json()
-            console.log(data)
-            mostrarPokemon(data, num)
+            showPokemon(data, num)
         } catch (error) {
             console.log(error)
         }  
     }
 }
-buscarPokemon()
 
-function mostrarPokemon(data, num){
+fetchPokemon()
+
+function showPokemon(data, num){
     let ul = document.getElementById('ul');
     if(num < 10){
         ul.innerHTML += `<li class="${data[1]}">

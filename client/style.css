@@ -8,7 +8,7 @@ body{
     overflow-x: hidden;
     font-family: helvetica, arial;
     background-color: #ebbe9b;
-    background-image: linear-gradient(315deg, #ebbe9b 0%, #e7a977 74%);
+    background-image: #ebbe9b; 
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -19,13 +19,17 @@ html{
     scroll-behavior: smooth;
 }
 
+
+
+/* HEADER */
 header{
     width: 100vw;
     padding: 10px 0px;
-    margin-top: 10px;
+    padding-top: 10px;
     margin-bottom: 20px;
     font-size: 22px;
     color: ghostwhite;
+    background-color:  #e7a977;
 }
 header nav{
     display: flex;
@@ -72,7 +76,7 @@ header nav ul li a{
     justify-content: space-around;
 
 }
-/* DEFININDO A COR DO BACKGROUND PELO TIPO DO POKÉMON */
+/* SETTING THE BACKGROUND COLOR BY POKÉMON TYPE */
 .pokedex ul .grass{
     background-color: MediumSeaGreen;
 }
@@ -119,7 +123,7 @@ header nav ul li a{
     background-color: DarkSeaGreen;
 }
 
-/* CARACTERÍSTICAS DO POKEMON */
+/* POKEMON FEATURES */
 .pokedex ul li h2{
     color: white;
     font-size: 30px;
@@ -135,7 +139,7 @@ header nav ul li a{
     padding: 2px 5px;
     border-radius: 10px;
 }
-/* DEFININDO A COR DO TEXTO PELO TIPO DO POKÉMON */
+/* SETTING THE TEXT COLOR BY POKÉMON TYPE*/
 .pokedex ul li #grass{
     background-color: rgb(41, 122, 78);
 }
@@ -183,7 +187,7 @@ header nav ul li a{
 }
 
 
-/* RESPONSIVIDADE */
+/* RESPONSIVE DESING */
 @media(max-width:1400px){
     .pokedex ul{
         grid-template-columns: 1fr 1fr 1fr;
@@ -216,7 +220,7 @@ header nav ul li a{
 @media(max-width:733px){
     .pokedex ul{
         grid-template-columns: 45vw 45vw;
-        margin-left: -40px;
+        margin-left: -5px;
     }
     .pokedex ul li h2{
         font-size: 25px;
@@ -225,10 +229,21 @@ header nav ul li a{
         font-size: 16px;
     }
 }
+@media(max-width:546px){
+    .pokedex ul{
+        margin-left: -5px;
+    }
+    .pokedex ul li h2{
+        font-size: 22px;
+    }
+}
 @media(max-width:436px){
     .pokedex ul{
         grid-template-columns: 90vw;
-        margin-left: -20px;
+        margin-left: -5px;
+    }
+    .pokedex ul li h2{
+        font-size: 25px;
     }
 }
 
