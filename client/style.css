@@ -65,6 +65,8 @@ header nav ul li a{
     padding: 12px;
     height: 100px;
     box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.5 );
+    transition: 0s;
+    overflow-y: hidden;
 }
 .pokedex ul li img{
     -webkit-filter: drop-shadow(8px 8px 7px rgba(0,0,0,0.5));
@@ -74,8 +76,13 @@ header nav ul li a{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
 }
+
+/* CLASS TO HIDE THE STATUS */
+.pokedex ul li section .status{
+    display: none;
+}
+
 /* SETTING THE BACKGROUND COLOR BY POKÉMON TYPE */
 .pokedex ul .grass{
     background-color: MediumSeaGreen;
@@ -139,6 +146,7 @@ header nav ul li a{
     padding: 2px 5px;
     border-radius: 10px;
 }
+
 /* SETTING THE TEXT COLOR BY POKÉMON TYPE*/
 .pokedex ul li #grass{
     background-color: rgb(41, 122, 78);
@@ -242,8 +250,11 @@ header nav ul li a{
         grid-template-columns: 90vw;
         margin-left: -5px;
     }
-    .pokedex ul li h2{
-        font-size: 25px;
+    header{
+        font-size: 20px;
+    }
+    header nav ul li a{
+        font-size: 30px;
     }
 }
 

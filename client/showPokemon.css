@@ -1,0 +1,89 @@
+/* SHOWING ALL STATUS */
+.pokedex ul .show{
+    position: absolute;
+    top: 15vh;
+    left: 20vw;
+    z-index: 1000;
+
+    height: 70vh;
+    width: 60vw;
+
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.8s;
+}
+
+/* CHANGING THE DESCRIPTION FROM ABOVE */
+.pokedex ul .show section .description h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.pokedex ul .show section .description p{
+    font-size: 25px;
+}
+
+
+/* CHANGING THE DESCRIPTION FROM BELOW */
+.pokedex ul .show section .status{
+    display: inline;
+    margin-top: -50px;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+.pokedex ul .show section .status h4{
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: #1c1c1c;
+}
+.pokedex ul .show section .status p{
+    font-size: 20px;
+    color: gray
+}
+
+
+
+/* RESPONSIVE DESING */
+@media(max-width:730px){
+    .pokedex ul .show section .status h4{
+        font-size: 22px;
+    }
+    .pokedex ul .show section .status p{
+        font-size: 18px;
+    }
+}
+@media(max-width:500px){
+    .pokedex ul .show section .description h2{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .pokedex ul .show section .description p{
+        font-size: 22px;
+    }
+    .pokedex ul .show section .status h4{
+        font-size: 20px;
+    }
+    .pokedex ul .show section .status p{
+        font-size: 16px;
+    }
+}
+@media(max-width:465px){
+    .pokedex ul .show{
+        left: 6vw;
+        width: 80vw;
+    }
+    .pokedex ul .show section .description h2{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .pokedex ul .show section .description p{
+        font-size: 22px;
+    }
+    .pokedex ul .show section .status h4{
+        font-size: 20px;
+    }
+    .pokedex ul .show section .status p{
+        font-size: 16px;
+    }
+}
